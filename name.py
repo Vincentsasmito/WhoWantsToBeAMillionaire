@@ -70,7 +70,7 @@ def main():
     questionsList = ["A wildlife management military operation occurred in Australia in 1932, this event is also known as", "Vietnam's national currency is", "Who founded the popular sportswear brand Adidas?", "Who is the current CEO of Honda Motor Company", "In the UK, the abbreviation NHS stands for National what Service?", "What name is given to the revolving belt machinery in an airport that delivers checked luggage from the plane to baggage reclaim?", "The hammer and sickle is one of the most recognisable symbols of which political ideology?", "What does the word loquacious mean?",  "Which of these religious observances lasts for the shortest period of time during the calendar year?", "In 1718, which pirate died in a battle off the coast of what is now North Carolina?"]
     answersDict = {1 : ["The Great Emu War", "Operation Zebra", "Integrated National Resources Management", "The Washburn Fire"], 2 : ["Ding", "RMB", "Dong", "Baht"], 3 : ["Adi Dassler", "Adolf Dassler", "Adira Dast", "Bill Bowerman"], 4 : ["Hiroshi Honda", "Suzune Miru", "Kiichiro Toyonda", "Toshihiro Mibe"], 5 : ["Humanity", "Health", "Household", "Honour"], 6 : ["Carousel", "Revolver", "Belt Track", "Baggage Claim"], 7 : ["Socialism", "Capitalism", "Neo-Nazism", "Communism"], 8 : ["Extremely Hungry", "Irritable", "Chatty", "Impatient"], 9 : ["Diwali", "Lent", "Ramadhan", "Easter"], 10 : ["Jack Sparrow", "Blackbeard", "Calico Jack", "William Kidd"]}
     ffLst = ["The Great Emu War", "Dong", "Adolf Dassler", "Toshihiro Mibe", "Health", "Carousel", "Communism", "Chatty", "Diwali", "Blackbeard"]
-    hintList = ["It involved machine guns and birds", "Definitely not Dong", "He was born in Germany during the 1900s", "It's not the obvious answer", "This service played a crucial role during the Covid-19 Pandemic", "Has the same exact name as a carnival attraction", "An ideology that the Americans wholeheartedly hate", "Synonymous with Verbose", "This festival is not celebrated by any of the Abrahamic Religions", "Some say he had a dark coloured beard"]
+    hintList = ["It involved machine guns and birds", "Definitely not Ding", "He was born in Germany during the 1900s", "It's not the obvious answer", "This service played a crucial role during the Covid-19 Pandemic", "Has the same exact name as a carnival attraction", "An ideology that the Americans wholeheartedly hate", "Synonymous with Verbose", "This festival is not celebrated by any of the Abrahamic Religions", "Some say he had a dark coloured beard"]
 
     # Game Begins
     os.system("CLS")
@@ -114,6 +114,8 @@ def main():
                     else:
                         player.level += 2
                         player.lives -= 2
+                else:
+                    playerAnswer = input()
         else:
             playerAnswer = input()
         if(ifDouble == False):
